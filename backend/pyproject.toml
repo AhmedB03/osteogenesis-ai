@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "osteogenesis"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["numpy==2.3.5", "scipy==1.16.1", "fastapi==0.116.1", "pydantic==2.11.7", "pandas==3.0.1", "uvicorn>=0.35,<1"]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1", "httpx==0.28.1"]
+
+[tool.setuptools.packages.find]
+include = ["osteogenesis*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,37 @@
+{
+  "python": "3.12.6",
+  "numpy": "2.3.5",
+  "scipy": "1.16.1",
+  "runs": {
+    "mature": {
+      "run_id": "57c3d886fa80f720",
+      "metrics": {
+        "final_displacement": 0.0,
+        "final_bone": 0.0,
+        "final_organization": 0.0,
+        "functional_lifetime": 0.0,
+        "lifetime_right_censored": false,
+        "cell_balance_error": 0.0,
+        "tissue_balance_error": 0.0
+      },
+      "warnings": [
+        "Computational thought experiment: uncalibrated dimensionless indices; not a prediction of human growth."
+      ]
+    },
+    "engineered": {
+      "run_id": "d6f3964fb66a612b",
+      "metrics": {
+        "final_displacement": 3.980001579496335,
+        "final_bone": 3.90265336562414,
+        "final_organization": 0.641722999903395,
+        "functional_lifetime": 60.0,
+        "lifetime_right_censored": true,
+        "cell_balance_error": 7.105427357601002e-15,
+        "tissue_balance_error": 7.549516567451064e-15
+      },
+      "warnings": [
+        "Computational thought experiment: uncalibrated dimensionless indices; not a prediction of human growth."
+      ]
+    }
+  }
+}

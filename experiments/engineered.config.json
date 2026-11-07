@@ -1,0 +1,43 @@
+{
+  "model_version": "0.1.0",
+  "scenario": "engineered",
+  "duration": 60.0,
+  "samples": 301,
+  "parameters": {
+    "recruitment": 0.04,
+    "proliferation": 0.25,
+    "differentiation": 0.12,
+    "hypertrophic_exit": 0.08,
+    "matrix_deposition": 0.15,
+    "mineralization": 0.1,
+    "ossification": 0.08,
+    "cell_death": 0.01,
+    "tissue_turnover": 0.005,
+    "senescence": 0.008,
+    "scaffold_degradation": 0.025,
+    "organization_repair": 0.06,
+    "organization_loss": 0.02,
+    "nutrient": 0.85,
+    "loading": 0.6,
+    "capacity": 2.0
+  },
+  "signals": {
+    "ihh": 1.0,
+    "pthrp": 1.0,
+    "bmp": 1.0,
+    "fgf": 1.0,
+    "wnt": 1.0,
+    "gh_igf": 1.0
+  },
+  "initial": {
+    "resting": 0.8,
+    "proliferating": 0.2,
+    "hypertrophic": 0.05,
+    "cartilage": 0.1,
+    "mineralized": 0.0,
+    "bone": 0.0,
+    "scaffold": 1.0,
+    "organization": 0.8,
+    "competence": 1.0
+  }
+}

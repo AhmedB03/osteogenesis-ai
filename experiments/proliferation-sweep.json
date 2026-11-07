@@ -1,0 +1,96 @@
+{
+  "request": {
+    "config": {
+      "model_version": "0.1.0",
+      "scenario": "engineered",
+      "duration": 60.0,
+      "samples": 301,
+      "parameters": {
+        "recruitment": 0.04,
+        "proliferation": 0.25,
+        "differentiation": 0.12,
+        "hypertrophic_exit": 0.08,
+        "matrix_deposition": 0.15,
+        "mineralization": 0.1,
+        "ossification": 0.08,
+        "cell_death": 0.01,
+        "tissue_turnover": 0.005,
+        "senescence": 0.008,
+        "scaffold_degradation": 0.025,
+        "organization_repair": 0.06,
+        "organization_loss": 0.02,
+        "nutrient": 0.85,
+        "loading": 0.6,
+        "capacity": 2.0
+      },
+      "signals": {
+        "ihh": 1.0,
+        "pthrp": 1.0,
+        "bmp": 1.0,
+        "fgf": 1.0,
+        "wnt": 1.0,
+        "gh_igf": 1.0
+      },
+      "initial": null
+    },
+    "parameter": "proliferation",
+    "values": [
+      0.1,
+      0.25,
+      0.4
+    ]
+  },
+  "rows": [
+    {
+      "value": 0.1,
+      "run_id": "ed1af81c9a8583c4",
+      "metrics": {
+        "final_displacement": 1.9137283616802878,
+        "final_bone": 2.07817483834294,
+        "final_organization": 0.6326735051124835,
+        "functional_lifetime": 60.0,
+        "lifetime_right_censored": true,
+        "cell_balance_error": 1.3322676295501878e-15,
+        "tissue_balance_error": 4.773959005888173e-15
+      },
+      "warnings": [
+        "Computational thought experiment: uncalibrated dimensionless indices; not a prediction of human growth."
+      ]
+    },
+    {
+      "value": 0.25,
+      "run_id": "d6f3964fb66a612b",
+      "metrics": {
+        "final_displacement": 3.980001579496335,
+        "final_bone": 3.90265336562414,
+        "final_organization": 0.641722999903395,
+        "functional_lifetime": 60.0,
+        "lifetime_right_censored": true,
+        "cell_balance_error": 7.105427357601002e-15,
+        "tissue_balance_error": 7.549516567451064e-15
+      },
+      "warnings": [
+        "Computational thought experiment: uncalibrated dimensionless indices; not a prediction of human growth."
+      ]
+    },
+    {
+      "value": 0.4,
+      "run_id": "58c5ea413fe5bb8f",
+      "metrics": {
+        "final_displacement": 5.572691462924264,
+        "final_bone": 5.2971248681727525,
+        "final_organization": 0.6444517114473586,
+        "functional_lifetime": 60.0,
+        "lifetime_right_censored": true,
+        "cell_balance_error": 5.329070518200751e-15,
+        "tissue_balance_error": 1.0436096431476471e-14
+      },
+      "warnings": [
+        "Computational thought experiment: uncalibrated dimensionless indices; not a prediction of human growth.",
+        "Cartilage burden exceeds an arbitrary plausibility screen of 5; inspect turnover assumptions."
+      ]
+    }
+  ],
+  "displacement_slope": 12.196543670813252,
+  "summary": "One-factor exploration. Slope is an endpoint secant, not causal evidence or a calibrated sensitivity."
+}
